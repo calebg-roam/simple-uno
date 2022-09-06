@@ -10,7 +10,7 @@ The game the AI are battling over is a simplified version of UNO. At the moment 
 - Each player gets dealt seven cards at the beginning of the game
 - One card is drawn and placed face up on the discard pile
 - On a player's turn they must either choose a card to play or pick up a card
-- A player can play card if it has the same colour or same number as the card currently on the top of the discard pile
+- A player can play a card if it has the same colour or same number as the card currently on the top of the discard pile
 - If a player doesn't have a valid card they must pick up a card
 - The first player to get rid of all cards in their hand wins
 
@@ -36,10 +36,12 @@ to use your AI instead.
 ### Rules around writing an AI
 1. You may reference anything in `./src/common/` as well as `./src/logger.ts`. You may *not* reference anything in `./src/game/`.
 2. You must not use reflection (is this a thing in js?) to inspect the game state.
+3. If you want to log import `debug` from `./src/logger.ts` and use that.
 
 ### Testing your AI
 If you look in `app.ts` there are two game modes, `roundMode()` and `singleMode()`:
 - singleMode has debug logging turned on and is good for you to debug your AI. It will print out what's happening at each step in the game. It only plays one game.
 - roundMode has debug logging turned off and plays 10,000 games, and then tallies the score at the end
+
 At the bottom of `app.ts` you will find roundMode enables and singleMode commented out. Just switch them around to enable one or the other.
 
