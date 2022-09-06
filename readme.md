@@ -43,5 +43,5 @@ If you look in `app.ts` there are two game modes, `roundMode()` and `singleMode(
 - singleMode has debug logging turned on and is good for you to debug your AI. It will print out what's happening at each step in the game. It only plays one game.
 - roundMode has debug logging turned off and plays 10,000 games, and then tallies the score at the end
 
-At the bottom of `app.ts` you will find roundMode enables and singleMode commented out. Just switch them around to enable one or the other.
+At the bottom of `app.ts` you will find roundMode enabled and singleMode commented out. Just switch them around to enable one or the other.
 
